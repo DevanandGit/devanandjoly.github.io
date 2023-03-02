@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,45 +7,51 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>Event page</title>
 </head>
-<body>
-        <div id="particles-js">
-            <div class="heading"><img src="images/athrava270.png" alt=""></div>
-            
 
-            <div class="card form-group" style="width: 18rem;">
+<body>
+    <div class="heading"><img src="images/athrava270.png" alt=""></div>
+    <div id="particles-js">
+        <div class="container">
+            <div class="card">
                 <!-- position Event image -->
-                <img class="card-img-top" src="images/event1.jpg" alt="Card image cap"> 
+                <img class="card-img-top" src="images/event1.jpg" alt="Card image cap">
                 <div class="card-body">
-                
-                <!-- referal id -->
-                <label class="text label" for="Referal">Referal id:</label>
-                <input class="text field" type="text" name="" id="Referal" value="">
-                <!-- link for payment gateway -->
-                <a href="#" class="btn btn-primary"><input class="submit-btn" type="button" value="Buy Ticket"></a>
-                
+                    <!-- referal id -->
+                    <div class="refferal">
+                        <label class="label" for="Referal">Referal id:</label>
+                        <input class="field" type="text" name="" id="Referal" value="">
+                    </div>
+                    <!-- link for payment gateway -->
+                    <div class="paybutton">
+                        <button class="submit-btn">Buy Ticket</button>
+                    </div>
+                    
                 </div>
             </div>
-        
-            
+
+
             <div class="detail">
-                    <div>
-                        <h1>{{title}}</h1><br>
-                        <h1>{{price}}</h1><br>
-                    </div>
+                <div class="titleprice">
+                    <h1>{{title}}</h1><br>
+                    <h1>{{price}}</h1><br>
+                </div>
+                <div class="diffButtons">
                     <button class="button" id="button1" onclick="showDescription('button1')">Description</button>
                     <button class="button" id="button2" onclick="showDescription('button2')">Rules</button>
-                    <button class="button" id="button3" onclick="showDescription('button3')">Price</button>
-                    <button class="button" id="button4" onclick="showDescription('button4')">Time and Date</button>
-                    <button class="button" id="button5" onclick="showDescription('button5')">Venue</button>
-
-                    <div id="description"></div>
+                    <button class="button" id="button3" onclick="showDescription('button3')">Time and Date</button>
+                    <button class="button" id="button4" onclick="showDescription('button4')">Venue</button>
+                </div>
+                <div id="description"></div>
             </div>
         </div>
     
+    </div>
     <script type="text/javascript" src="particle-js/particles.min.js"></script>
     <script type="text/javascript" src="particle-js/app.js"></script>
     <script type="text/javascript" src="main.js"></script>
     
-    
+
+
 </body>
-</html> 
+
+</html>

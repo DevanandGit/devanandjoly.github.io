@@ -8,137 +8,167 @@ body{
 }
 
 #particles-js{
-    /* background-color: black; */
-    position: relative;
+    background:black;
 	width: 100%;
 	height: 100%;
-	top: 0;
-	left: 0;
 }
 h1{
     color: #d9ac26;
 }
 
-.card{
-    position: absolute;
-    left: 6%;
-    top: 20%;
-    background: transparent;
-    
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card{ 
+    /* position: absolute; */
+    padding: 32px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* opacity: 0%; */
+}
+
 .card-img-top{
     display: block;
     border-radius: 10px;
-    margin-left: auto;
-    margin-top: auto; 
-    height: 350px;
-    width: 350px; 
+    height:35%;
+    width:35%;
+}
+
+.refferal{
+    margin: 32px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.label{
+    font-size: 20px;
+    color: #d9ac26;
+}
+
+.field{
+    width: 150px;
+    height: 30px;
+    border-color: #d9ac26;
+    border-radius: 8px;
+    margin-left: 19px;
+}
+
+.paybutton{
+    display: flex;
+    justify-content: center;
 }
 
 .submit-btn{
-    position: absolute;
-    left: 1px;
-    top: 110%;
-    width: 350px;
+    width: 80%;
     height: 40px;
     border-radius: 12px;
-
     border: none;
     padding: 1px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-
     background-color: black; 
     color: #d9ac26; 
     border: 2px solid #d9ac26;
 
-
 }
+
 /* create hover effect on submit button */
 .submit-btn:hover{
     background-color: #d9ac26;
     color: black;
 }
+
+
+
+
+
+/*                  Title price section */
+
+
+
 .detail{
-    position:absolute;
-    left: 40%;
-    top: 20%;
-    
+    /* position: absolute;
+    top: 90%;
+    left: 10%; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#description {
-    width: 50%;
-    height: auto;
-    border: 1px solid #d9ac26;
-    border-left-width: 2px;
-    border-top-width: auto;
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-    padding: 10px;
-    margin-top: 10px;
-    box-sizing: border-box;
-    color:#d9ac26;
+.titleprice{
+    margin: 0px 14px;
 }
 
+.diffbuttons{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ 
 .button{
-    border: none;
     border-radius: 8px;
-    padding: 1px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 10px;
     transition-duration: 0.4s;
     cursor: pointer;
-
-    background-color: black; 
-    color: #d9ac26; 
+    background-color: black;
+    color: #d9ac26;
     border: 2px solid #d9ac26;
+    width: fit-content;
+    padding: 5px;
+    margin: 3px;
 }
 
 .button:hover{
     background-color: #d9ac26;
     color: black;
 }
-.text{
-    position: relative;
-    top: 20px;
-}
-.label{
-    font-size: 20px;
+
+#description {
+    border: 1px solid #d9ac26;
+    border-left-width: 4px;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
     color: #d9ac26;
-}
-.field{
-    width: 150px;
-    height: 30px;
-    border-color: #d9ac26;
-    border-radius: 8px;
+    margin: 11px 11px;
+    padding: 11px 11px;
+    min-height: 75px;
 }
 
-@media screen and (max-width: 768px) {
-	.detail {
-		width: 100%;
-		max-width: 900px;
-        top: 90%;
-        left: 6%;
-        max-height: 90px;
-	}
-}
-@media screen and (max-width:700px)
-{
-    
-}
-.heading{
-    position: absolute;
-    align-content: center;
-    left: 37%;
-    right: 40%;
-    top: 1%;
+
+
+
+@media screen and (max-width:800px) {
+    .card-img-top{
+        width: 80%;
+        height: 80%;
+    }
 }
 
+@media screen and (min-width:800px) {
+    .diffbuttons{
+        width: 600px;
+        margin: auto;
+    }
+
+    .diffbuttons button{
+        width: 25%;
+        font-size: 15px;
+    }
+}
